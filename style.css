@@ -8,6 +8,7 @@ body {
   background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
 }
 
+
 a {
   display: inline-block;
 }
@@ -35,10 +36,35 @@ a {
   font-family: "Poppins", serif;
   color: white;
   margin: 0 15px;
-  border: 1px solid transparent;
-  transition: .3s;
+  /* border: 1px solid transparent; */
+  transition: .2s;
+  position: relative;
 }
 
-.navbar a:hover {
-  transform: scale(1.2);
+.navbar .links a:hover{
+  transform: translateY(-2px);
+}
+
+.navbar .links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: white;
+  left: 0;
+  bottom: -4px;
+}
+
+.links a:hover::after {
+  width: 100%;
+  transition: .4s;
+}
+
+.logo {
+  border: 2px solid transparent;
+  transition: 0.4s;
+}
+
+.logo:hover {
+  transform: translateY(-2px);
 }
