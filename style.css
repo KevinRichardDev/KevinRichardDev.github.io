@@ -8,11 +8,11 @@
 }
 
 body {
-  background: linear-gradient(to top, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
 }
 
 .header {
-  height: 100vh;
+  height: 90vh;
 }
 
 a {
